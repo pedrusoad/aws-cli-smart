@@ -1,6 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-// import { data } from '@app/classes/data';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +9,7 @@ import { Subscription } from 'rxjs';
 export class HomeComponent implements OnInit, OnDestroy {
   private subscriptions: Array<Subscription> = [];
 
-  constructor( ) { }
+  constructor( ) {}
 
 
   ngOnInit(): void {

@@ -1,16 +1,32 @@
 <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
     aria-labelledby="offcanvasWithBothOptionsLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+    <div class="offcanvas-header justify-content-end">
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-        <p>Try scrolling the rest of the page to see this option in action.</p>
+        <app-offcanvas></app-offcanvas>
     </div>
 </div>
 
-<button class="btn-offcanvas rounded-3 px-3 shadow" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-chevron-right"></i></button>
+<!-- <button class="btn-offcanvas rounded-3 px-3 shadow" type="button" data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+        class="fa-solid fa-chevron-right text-black"></i></button> -->
 
 <div class="container">
+    <div class="d-flex flex-column justify-content-center align-items0center main-content">
+        <div class="col-12 text-center fs-1 fw-bold text-shadow">
+            Smart AWS CLI
+        </div>
+        <div class="col-12 text-center fs-6 fw-light">
+            por <a href="https://github.com/pedrusoad" target="_blank" class="fw-bold perfil-link">Pedrusoad</a>
+        </div>
+        <div class="col-12 text-center pt-5 pb-3 fs-6">
+            Clique no botão abaixo e selecione um Serviço:
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="btn-offcanvas-home rounded-3 px-3 py-2 shadow" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <i class="fa-solid fa-chevron-right text-black"></i></button>
+        </div>
+    </div>
 </div>

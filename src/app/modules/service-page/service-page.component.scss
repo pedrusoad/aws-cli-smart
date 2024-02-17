@@ -1,0 +1,13 @@
+.comand-card {
+    background: #2c4367;
+    .clipboard {
+        display: none;
+    }
+}
+.comand-card:hover {
+    background: #273a5a;
+    cursor: pointer;
+    .clipboard {
+        display: block !important;
+    }
+}

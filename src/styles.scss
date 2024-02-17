@@ -3,24 +3,40 @@
 body {
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
-    background: linear-gradient(45deg, rgb(19, 37, 63) 0%, rgb(1, 21, 44) 100%);
+    background: linear-gradient(45deg, #2b4263 0%, #27394a 100%);
 }
 
 * {
-    $primary: #000;
+    color: #fff;
+
+    .text-shadow {
+        text-shadow: 2px 2px 5px #000;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    .offcanvas {
+        background: #232f3e;
+    }
+
+    .btn-offcanvas {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        aspect-ratio: 1/1;
+        background-color: #ff9c08;
+    }
+
+    .btn-offcanvas:hover {
+        background-color: #c97800;
+    }
 }
 
-.btn-offcanvas {
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    aspect-ratio: 1/1;
-    background-color: #4d87bd;
-}
 
-.btn-offcanvas:hover {
-    background-color: #2e517a;
-}
+
+
 
 /* Personalização da barra de rolagem para navegadores WebKit (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {
@@ -48,6 +64,3 @@ body {
     background: #0082aa;
     /* Cor da barra de rolagem quando o mouse passa por cima */
 }
-
-/* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';

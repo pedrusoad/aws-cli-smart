@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+            <ng-container *ngIf="!carregando">
+                <div class="py-4 text-center fs-2 fw-semibold text-shadow">{{ config_service.serviceName }}</div>
+                <div class="d-flex flex-column gap-2">
+                    <ng-container *ngFor="let comand of config_service.commands; let index = index">
+                        <div class="shadow rounded-3 p-2 comand-card" (click)="copyCmd(comand.cmd, index)">
+                            <div class="d-flex justify-content-between">
+                                <div class="fs-5 fw-semibold">
+                                    {{ comand.name }}
+                                </div>
+                                <div class="clipboard">
+                                    <ng-container *ngIf="coppying_idx != index"><i
+                                            class="fa-regular fa-clipboard"></i></ng-container>
+                                    <ng-container *ngIf="copying && coppying_idx == index"><i
+                                            class="fa-solid fa-check text-success"></i></ng-container>
+                                </div>
+                            </div>
+                            <div class="fs-6 pb-1">
+                                {{ comand.description }}
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <div class="cmd-box py-1 px-3 rounded-2 bg-dark w-100">
+                                    {{ comand.cmd }}
+                                </div>
+                            </div>
+                        </div>
+                    </ng-container>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+
+</div>
